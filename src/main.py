@@ -1,5 +1,6 @@
 width_string: str = ""
 
+
 def ask_question(question: str, prompt: str):
     print(f"--- {question}? ---")
     try:
@@ -9,6 +10,7 @@ def ask_question(question: str, prompt: str):
         print("Probably because you entered:")
         print("a) Decimals\nb) Letters\nc) Symbols\nd) Spaces between numbers")
         raise SystemExit
+
 
 width: int = ask_question("What is the width of the rectangle", "Width")
 height: int = ask_question("What is the height of the rectangle", "Height")

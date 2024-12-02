@@ -4,7 +4,11 @@ width_string: str = ""
 def display_error() -> None:
     print("Cannot print a rectangle!")
     print("Probably because you entered:")
-    print("a) Decimals\nb) Letters\nc) Symbols\nd) Spaces between numbers\ne) you typed a zero")
+    print("a) Decimals")
+    print("b) Letters")
+    print("c) Symbols")
+    print("d) Spaces between numbers")
+    print("e) You entered a zero")
     raise SystemExit
 
 

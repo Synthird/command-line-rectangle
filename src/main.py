@@ -16,7 +16,7 @@ width: int = ask_question("width")
 height: int = ask_question("height")
 
 for _ in range(width):
-    width_string += "."
+    width_string = f"{width_string}."
 
 for _ in range(height):
     print(width_string)

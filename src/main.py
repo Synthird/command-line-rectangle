@@ -1,7 +1,17 @@
 width_string: str = ""
 
-width: int = int(input("What is the width of the rectangle:"))
-height: int = int(input("What is the height of the rectangle:"))
+def ask_question(question: str, prompt: str):
+    print(f"--- {question}? ---")
+    try:
+        return int(input(f"{prompt}: "))
+    except:
+        print("Cannot print a rectangle!")
+        print("Probably because you entered:")
+        print("a) Decimals\nb) Letters\nc) Symbols\nd) Spaces between numbers")
+        raise SystemExit
+
+width: int = ask_question("What is the width of the rectangle", "Width")
+height: int = ask_question("What is the height of the rectangle", "Height")
 
 for _ in range(width):
     width_string = width_string + "."

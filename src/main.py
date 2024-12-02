@@ -16,7 +16,7 @@ width: int = ask_question("What is the width of the rectangle", "Width")
 height: int = ask_question("What is the height of the rectangle", "Height")
 
 for _ in range(width):
-    width_string = width_string + "."
+    width_string += "."
 
 for _ in range(height):
     print(width_string)

@@ -16,6 +16,7 @@ def ask_question(prompt: str) -> int:
     print(f"--- What is the {prompt} of the rectangle? ---")
     try:
         number: int = int(input(f"{prompt.capitalize()}: "))
+
         if number > 0:
             return number
         else:

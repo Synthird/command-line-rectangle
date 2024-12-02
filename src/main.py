@@ -12,7 +12,7 @@ def display_error() -> None:
     raise SystemExit
 
 
-def ask_question(prompt: str) -> str:
+def ask_question(prompt: str) -> int:
     print(f"--- What is the {prompt} of the rectangle? ---")
     try:
         number: int = int(input(f"{prompt.capitalize()}: "))

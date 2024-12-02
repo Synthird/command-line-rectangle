@@ -1,6 +1,6 @@
 # Command-line-rectangle
 
-Printing a rectangle in the command line.
+Printing a rectangle in the command line. Width and height are asked before printing.
 
 ## Example of a command line-printed rectangle
 

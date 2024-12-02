@@ -1,10 +1,10 @@
 width_string: str = ""
 
 
-def ask_question(question: str, prompt: str):
-    print(f"--- {question}? ---")
+def ask_question(prompt: str):
+    print(f"--- What is the {prompt} of the rectangle? ---")
     try:
-        return int(input(f"{prompt}: "))
+        return int(input(f"{prompt.capitalize()}: "))
     except:
         print("Cannot print a rectangle!")
         print("Probably because you entered:")
@@ -12,8 +12,8 @@ def ask_question(question: str, prompt: str):
         raise SystemExit
 
 
-width: int = ask_question("What is the width of the rectangle", "Width")
-height: int = ask_question("What is the height of the rectangle", "Height")
+width: int = ask_question("width")
+height: int = ask_question("height")
 
 for _ in range(width):
     width_string += "."

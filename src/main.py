@@ -2,7 +2,7 @@ width_string: str = ""
 
 
 def display_error() -> None:
-    print("Cannot print a rectangle!")
+    print("!!! Cannot print a rectangle! !!!")
     print("Probably because you entered:")
     print("a) Decimals")
     print("b) Letters")

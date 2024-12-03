@@ -17,7 +17,7 @@ def ask_question(prompt: str) -> int:
         print("b) Letters")
         print("c) Symbols")
         print("d) Spaces between numbers")
-        print("e) A zero")
+        print("e) Only a zero")
         raise SystemExit
 
 

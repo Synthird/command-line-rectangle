@@ -8,7 +8,7 @@ def display_error() -> None:
     print("b) Letters")
     print("c) Symbols")
     print("d) Spaces between numbers")
-    print("e) You entered a zero")
+    print("e) A zero")
     raise SystemExit
 
 

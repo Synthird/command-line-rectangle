@@ -22,11 +22,8 @@ def ask_measurement(prompt: str) -> int:
         raise SystemExit
 
 
-width: int = ask_measurement("width")
-height: int = ask_measurement("height")
-
-for _ in range(width):
+for _ in range(ask_measurement("width")):
     width_string = f"{width_string}."
 
-for _ in range(height):
+for _ in range(ask_measurement("height")):
     print(width_string)

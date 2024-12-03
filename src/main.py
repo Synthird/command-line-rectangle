@@ -17,7 +17,7 @@ def ask_measurement(prompt: str) -> int:
         print("b) Letters")
         print("c) Symbols")
         print("d) Spaces between numbers")
-        print("e) Only a zero")
+        print("e) Only a zero or a negative number")
         print("f) You exited the program")
         raise SystemExit
 

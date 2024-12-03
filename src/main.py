@@ -18,6 +18,7 @@ def ask_question(prompt: str) -> int:
         print("c) Symbols")
         print("d) Spaces between numbers")
         print("e) Only a zero")
+        print("f) You exited the program")
         raise SystemExit
 
 

@@ -6,7 +6,7 @@ def ask_measurement(prompt: str) -> int:
     try:
         number: int = int(input(f"{prompt.capitalize()}: "))
 
-        if number > 0:
+        if number > -1:
             return number
         else:
             raise ValueError
@@ -17,7 +17,7 @@ def ask_measurement(prompt: str) -> int:
         print("b) Letters")
         print("c) Symbols")
         print("d) Spaces between numbers")
-        print("e) Only a zero or a negative number")
+        print("e) A negative number")
         print("f) You exited the program")
         raise SystemExit
 
@@ -25,8 +25,10 @@ def ask_measurement(prompt: str) -> int:
 width: int = ask_measurement("width")
 height: int = ask_measurement("height")
 
-for _ in range(width):
-    width_string = f"{width_string}."
+if height > 0:
+    for _ in range(width):
+        width_string = f"{width_string}."
 
-for _ in range(height):
-    print(width_string)
+if width > 0:
+    for _ in range(height):
+        print(width_string)

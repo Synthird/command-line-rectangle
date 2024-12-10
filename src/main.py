@@ -1,7 +1,7 @@
 width_string: str = ""
 
 
-def ask_measurement(prompt: str) -> int:
+def ask_length_of(prompt: str) -> int:
     print(f"--- What is the {prompt} of the rectangle? ---")
     try:
         number: int = int(input(f"{prompt.capitalize()}: "))
@@ -22,8 +22,8 @@ def ask_measurement(prompt: str) -> int:
         raise SystemExit
 
 
-width: int = ask_measurement("width")
-height: int = ask_measurement("height")
+width: int = ask_length_of("width")
+height: int = ask_length_of("height")
 
 if height > 0:
     for _ in range(width):

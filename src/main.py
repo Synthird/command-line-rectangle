@@ -1,10 +1,10 @@
 width_string: str = ""
 
 
-def ask_length_of(prompt: str) -> int:
-    print(f"--- What is the {prompt} of the rectangle? ---")
+def ask_length_of(length: str) -> int:
+    print(f"--- What is the {length} of the rectangle? ---")
     try:
-        number: int = int(input(f"{prompt.capitalize()}: "))
+        number: int = int(input(f"{length.capitalize()}: "))
 
         if number > -1:
             return number

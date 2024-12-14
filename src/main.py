@@ -11,7 +11,7 @@ def ask_length_of(length: str) -> int:
         else:
             raise ValueError
     except:
-        print("!!! Cannot print a rectangle! !!!")
+        print(f"!!! Cannot print a rectangle due to the {length}! !!!")
         print("Probably because you entered:")
         print("a) Decimals")
         print("b) Letters")

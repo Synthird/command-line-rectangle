@@ -1,24 +1,31 @@
 width_string: str = ""
 
 
-def ask_length_of(length: str) -> int:
-	print(f"--- What is the {length} of the rectangle? ---")
-	try:
-		number: int = int(input(f"{length.capitalize()}: ").replace(" ", ""))
+def exit_with_possible_reasons() -> None:
+	print("!!! Cannot print dots! !!!")
+	print("Probably because you entered:")
+	print("a) Decimals")
+	print("b) Letters")
+	print("c) Symbols")
+	print("d) A negative number")
+	print("e) You exited the program")
+	raise SystemExit
 
-		if number > -1:
-			return number
-		else:
-			raise ValueError
+
+def ask_length_of(length: str) -> int:
+	number: int = 0
+
+	print(f"--- What is the {length} of the rectangle? ---")
+
+	try:
+		number = int(input(f"{length.capitalize()}: ").replace(" ", ""))
 	except:
-		print(f"!!! Cannot print a rectangle due to the {length}! !!!")
-		print("Probably because you entered:")
-		print("a) Decimals")
-		print("b) Letters")
-		print("c) Symbols")
-		print("d) A negative number")
-		print("e) You exited the program")
-		raise SystemExit
+		exit_with_possible_reasons()
+
+	if number > -1:
+		return number
+	else:
+		exit_with_possible_reasons()
 
 
 width: int = ask_length_of("width")
